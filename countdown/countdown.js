@@ -15,13 +15,13 @@ function updateTimer() {
     if (now < openTime) {
         // 1. 운영 전
         diff = openTime - now;
-        statusMsg.innerText = "금일 오픈까지 남은 시간";
+        statusMsg.innerText = "금일 오픈까지 남은 시간:";
         timerDisplay.innerText = formatTime(diff);
     } 
     else if (now >= openTime && now < closeTime) {
         // 2. 운영 중
         diff = closeTime - now;
-        statusMsg.innerText = "금일 마감까지 남은 시간";
+        statusMsg.innerText = "금일 마감까지 남은 시간:";
         timerDisplay.innerText = formatTime(diff);
     } 
     else {
